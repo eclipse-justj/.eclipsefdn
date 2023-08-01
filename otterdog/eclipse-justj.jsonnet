@@ -3,7 +3,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-justj') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
-    blog: "https://www.eclipse.org/justj/",
+    blog: "https://eclipse.dev/justj/",
     default_repository_permission: "none",
     default_workflow_permissions: "write",
     dependabot_security_updates_enabled_for_new_repositories: false,
