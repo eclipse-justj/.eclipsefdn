@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-justj
 site_description: Otterdog configuration @ eclipse-justj
-strict: true
+strict: false
 
 site_url: https://eclipse-justj.github.io/.eclipsefdn/
 
