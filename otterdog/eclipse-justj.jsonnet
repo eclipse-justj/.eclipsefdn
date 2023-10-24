@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-justj') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
     blog: "https://eclipse.dev/justj/",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse JustJ provides fully-functional Java runtimes that are made available via p2 repositories.",
     email: "justj-dev@eclipse.org",
@@ -29,6 +28,10 @@ orgs.newOrg('eclipse-justj') {
       description: "JustJ GitHub Organization",
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('justj') {
       allow_merge_commit: true,
@@ -37,6 +40,9 @@ orgs.newOrg('eclipse-justj') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
     orgs.newRepo('justj-website') {
       allow_merge_commit: true,
@@ -44,6 +50,9 @@ orgs.newOrg('eclipse-justj') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
     orgs.newRepo('justj.tools') {
       allow_merge_commit: true,
@@ -52,6 +61,9 @@ orgs.newOrg('eclipse-justj') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
   ],
 }
