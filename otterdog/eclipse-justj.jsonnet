@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-justj') {
   settings+: {
-    billing_email: "webmaster@eclipse.org",
     blog: "https://eclipse.dev/justj/",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse JustJ provides fully-functional Java runtimes that are made available via p2 repositories.",
