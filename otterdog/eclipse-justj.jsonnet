@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-justj') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse JustJ provides fully-functional Java runtimes that are made available via p2 repositories.",
     email: "justj-dev@eclipse.org",
-    members_can_change_project_visibility: false,
     name: "Eclipse JustJ",
     packages_containers_internal: false,
     packages_containers_public: false,
